@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import ImageContextProvider from "./store/image-context";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ImageContextProvider>
     <App />
-  </React.StrictMode>,
+  </ImageContextProvider>,
   document.getElementById("root")
 );
