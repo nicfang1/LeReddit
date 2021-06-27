@@ -11,7 +11,7 @@ const Navbar = () => {
   const [search, setSearch] = useState("");
 
   return (
-    <div className="flex justify-around p-5 bg-white">
+    <div className="flex justify-around p-5 bg-white sticky top-0">
       <div>
         <img
           className="h-10 w-100"
