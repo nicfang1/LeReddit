@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import DisplayPosts from "./components/DisplayPosts";
 import FilterBar from "./components/FilterBar";
 import Navbar from "./components/Navbar";
+import RedditPremium from "./components/RedditPremium";
 import TopCommunity from "./components/TopCommunity";
 import { ImageContext } from "./store/image-context";
 
@@ -24,6 +25,7 @@ function App() {
         </div>
         <div>
           <TopCommunity />
+          <RedditPremium />
         </div>
       </div>
     </div>

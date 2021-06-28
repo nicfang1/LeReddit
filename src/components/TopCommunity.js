@@ -3,7 +3,7 @@ import React from "react";
 const TopCommunity = () => {
   return (
     <div className="mt-14 border-transparent rounded-md bg-white overflow-hidden">
-      <p className="bg-blue-400 text-white text-xl px-5 pt-10 pb-2 font-medium">
+      <p className="bg-blue-600 text-white text-xl px-5 pt-10 pb-2 font-medium">
         Top New Communities
       </p>
       <ul>
@@ -18,7 +18,7 @@ const TopCommunity = () => {
         </li>
       </ul>
       <div className="flex items-center justify-center py-3">
-        <button className="bg-blue-500 text-white w-3/4 p-2 rounded-full">
+        <button className="bg-blue-500 text-white w-5/6 p-2 font-bold rounded-full hover:bg-blue-400">
           View All
         </button>
       </div>
