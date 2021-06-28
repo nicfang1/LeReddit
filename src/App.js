@@ -1,25 +1,30 @@
 import React, { useContext, useEffect } from "react";
+import DisplayPosts from "./components/DisplayPosts";
 import FilterBar from "./components/FilterBar";
 import Navbar from "./components/Navbar";
+import TopCommunity from "./components/TopCommunity";
 import { ImageContext } from "./store/image-context";
-import Post from "./components/Post";
 
 function App() {
   const imageCtx = useContext(ImageContext);
-  const images = imageCtx.images;
+
+  const getImages = imageCtx.getImages;
 
   useEffect(() => {
-    imageCtx.getImages("");
-  }, [imageCtx]);
+    getImages("");
+  }, [getImages]);
 
   return (
     <div className="bg-gray-300">
       <Navbar />
-      <div className="px-48">
-        <FilterBar />
-        {images.map((image) => (
-          <Post image={image} />
-        ))}
+      <div className="grid grid-cols-3 px-48 gap-6">
+        <div className="col-span-2">
+          <FilterBar />
+          <DisplayPosts />
+        </div>
+        <div>
+          <TopCommunity />
+        </div>
       </div>
     </div>
   );

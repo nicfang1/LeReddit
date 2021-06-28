@@ -7,7 +7,7 @@ const Post = ({ image }) => {
         + Join
       </button>
       <img src={image.webformatURL} alt="hello" />
-      <div className="flex w-2/6 p-2">
+      <div className="flex p-2">
         <p className="hover:bg-gray-200 p-2 cursor-pointer">
           {image.comments} Comment
         </p>
