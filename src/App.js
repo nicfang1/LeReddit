@@ -3,6 +3,7 @@ import DisplayPosts from "./components/DisplayPosts";
 import FilterBar from "./components/FilterBar";
 import Navbar from "./components/Navbar";
 import RedditPremium from "./components/RedditPremium";
+import Terms from "./components/Terms";
 import TopCommunity from "./components/TopCommunity";
 import { ImageContext } from "./store/image-context";
 
@@ -26,6 +27,7 @@ function App() {
         <div>
           <TopCommunity />
           <RedditPremium />
+          <Terms />
         </div>
       </div>
     </div>
